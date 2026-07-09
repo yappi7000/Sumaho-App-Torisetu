@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📱 回線管理アプリ かんたん取説</title>
+<style>
+  :root{
+    --bg:#0a0a0d; --card:#17171c; --card2:#1f1f26; --border:#2a2a33;
+    --text:#f2f2f4; --sub:#9a9aa5; --blue:#3b82f6; --green:#22c55e; --yellow:#eab308;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+    line-height:1.75;}
+  .wrap{max-width:640px;margin:0 auto;padding:0 20px 80px;}
+  .hero{padding:48px 20px 36px;text-align:center;background:linear-gradient(180deg,#151520,var(--bg));}
+  .hero .emoji{font-size:52px;margin-bottom:10px;}
+  .hero h1{font-size:26px;font-weight:800;margin:0 0 8px;}
+  .hero p{color:var(--sub);font-size:14.5px;margin:0;}
+  .toc{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px 20px;margin:24px 0;}
+  .toc h2{font-size:15px;margin:0 0 10px;color:var(--sub);}
+  .toc ol{margin:0;padding-left:20px;}
+  .toc li{margin-bottom:6px;font-size:14.5px;}
+  .toc a{color:var(--blue);text-decoration:none;}
+  section{margin:36px 0;}
+  .sec-head{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .sec-head .num{background:var(--blue);color:#fff;width:30px;height:30px;border-radius:9px;
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex:none;}
+  .sec-head h2{font-size:19px;font-weight:800;margin:0;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 20px;margin-bottom:14px;}
+  .card h3{font-size:15.5px;margin:0 0 8px;display:flex;align-items:center;gap:8px;}
+  .card p{margin:0;font-size:14.5px;color:#dcdce0;}
+  .steps{margin:0;padding:0;list-style:none;}
+  .steps li{display:flex;gap:12px;margin-bottom:14px;font-size:14.5px;}
+  .steps .bull{background:var(--card2);border:1px solid var(--border);width:26px;height:26px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;flex:none;font-size:13px;font-weight:700;color:var(--blue);}
+  .tip{background:#132318;border:1px solid #234a2c;border-radius:12px;padding:14px 16px;font-size:14px;margin-top:10px;}
+  .tip b{color:var(--green);}
+  .warn{background:#2a220f;border:1px solid #4a3a15;border-radius:12px;padding:14px 16px;font-size:14px;margin-top:10px;}
+  .warn b{color:var(--yellow);}
+  .tagdemo{display:inline-block;padding:3px 10px;border-radius:7px;font-size:12.5px;font-weight:700;color:#fff;margin-right:4px;}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px;}
+  td,th{padding:8px 6px;border-bottom:1px solid var(--border);text-align:left;}
+  th{color:var(--sub);font-weight:600;}
+  .faq{border-bottom:1px solid var(--border);padding:14px 0;}
+  .faq .q{font-weight:700;font-size:14.5px;margin-bottom:6px;}
+  .faq .a{color:var(--sub);font-size:14px;}
+  .footer{text-align:center;color:var(--sub);font-size:13px;margin-top:50px;padding-top:24px;border-top:1px solid var(--border);}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="emoji">📱✨</div>
+  <h1>回線管理アプリ かんたん取説</h1>
+  <p style="margin-bottom:14px;">はじめてでも迷わない！5分で使い方まるわかりガイド🔰</p>
+  <div style="display:inline-block;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 18px;font-size:13px;color:var(--sub);">
+    <b style="color:var(--text);">やっぴ〜Presents</b><br>
+    X（<a href="https://twitter.com/8p_thankyou" style="color:var(--blue);text-decoration:none;">@8p_thankyou</a>）　LINE公式（<a href="https://lin.ee/AsTWK4D" style="color:var(--blue);text-decoration:none;">https://lin.ee/AsTWK4D</a>）
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="toc">
+    <h2>📋 もくじ</h2>
+    <ol>
+      <li><a href="#s1">🏠 画面のきほん（5つのタブ）</a></li>
+      <li><a href="#s2">➕ 回線を登録してみよう</a></li>
+      <li><a href="#s3">💰 CB・支出を記録する</a></li>
+      <li><a href="#s4">🎫 MNP予約番号を管理する</a></li>
+      <li><a href="#s5">📊 利益計算・統計を見る</a></li>
+      <li><a href="#s6">📅 Googleカレンダー連携</a></li>
+      <li><a href="#s7">⚙️ 設定（キャリア・契約者・使用者）</a></li>
+      <li><a href="#s8">💾 データのバックアップ</a></li>
+      <li><a href="#s9">❓ よくある質問</a></li>
+    </ol>
+  </div>
+
+  <section id="s1">
+    <div class="sec-head"><div class="num">1</div><h2>🏠 画面のきほん（5つのタブ）</h2></div>
+    <div class="card">
+      <p>画面いちばん下に5つのボタンが並んでるよ📲　タップして切り替えるだけ！</p>
+      <table>
+        <tr><th>タブ</th><th>できること</th></tr>
+        <tr><td>📞 回線一覧</td><td>登録した回線をぜんぶ見る・追加する</td></tr>
+        <tr><td>🎫 予約番号</td><td>MNP予約番号の管理</td></tr>
+        <tr><td>📷 CB</td><td>キャッシュバックの月別集計</td></tr>
+        <tr><td>📈 利益計算</td><td>収入-支出の利益を自動計算</td></tr>
+        <tr><td>🥧 統計</td><td>キャリア別・月別のグラフ</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="s2">
+    <div class="sec-head"><div class="num">2</div><h2>➕ 回線を登録してみよう</h2></div>
+    <div class="card">
+      <ul class="steps">
+        <li><span class="bull">1</span>右下の <b>青い＋ボタン</b> 🔵 をタップ</li>
+        <li><span class="bull">2</span><b>キャリア</b>を選ぶ（<span class="tagdemo" style="background:#e6197a">UQ</span><span class="tagdemo" style="background:#e0312e">docomo</span> など）</li>
+        <li><span class="bull">3</span><b>電話番号・契約日</b>を入力📅</li>
+        <li><span class="bull">4</span><b>契約者・使用者</b>を選ぶ👤（先に設定で登録が必要）</li>
+        <li><span class="bull">5</span>端末名やメモは任意でOK✏️</li>
+        <li><span class="bull">6</span>最後に「保存」をタップして完了🎉</li>
+      </ul>
+      <div class="tip">💡 <b>ポイント：</b>契約者・使用者・キャリアの候補は「⚙️設定」から先に登録しておくと入力がラクだよ！</div>
+    </div>
+  </section>
+
+  <section id="s3">
+    <div class="sec-head"><div class="num">3</div><h2>💰 CB・支出を記録する</h2></div>
+    <div class="card">
+      <p>回線カードをタップ→編集画面の下の方にある <b>「＋ 取引を追加」</b> ボタンから記録するよ📝</p>
+      <ul class="steps">
+        <li><span class="bull">1</span>「収入」か「支出」を選ぶ</li>
+        <li><span class="bull">2</span>金額・日付を入力</li>
+        <li><span class="bull">3</span>キャッシュバックの場合はタグ欄に <b>「CB」</b> と入力✨</li>
+      </ul>
+      <div class="tip">💡 <b>ポイント：</b>タグに「CB」と書いた収入だけが「CB」タブと自動で集計されるよ📷　維持費などの支出はタグ自由でOK！</div>
+    </div>
+  </section>
+
+  <section id="s4">
+    <div class="sec-head"><div class="num">4</div><h2>🎫 MNP予約番号を管理する</h2></div>
+    <div class="card">
+      <p>「予約番号」タブの右下＋から、対象回線・番号・発行日・有効期限を登録📆</p>
+      <p>期限が切れると自動で「期限切れ」表示になるよ⏰　「期限切れを表示」のスイッチでON/OFF切り替え可能。</p>
+    </div>
+  </section>
+
+  <section id="s5">
+    <div class="sec-head"><div class="num">5</div><h2>📊 利益計算・統計を見る</h2></div>
+    <div class="card">
+      <p>💰 <b>利益計算タブ</b>：月ごとの収入・支出・利益を自動集計。月をタップすると回線別の内訳にジャンプするよ🔍</p>
+      <p>🥧 <b>統計タブ</b>：総回線数・総利益・平均利益がひと目でわかる。キャリア別の棒グラフや、直近6ヶ月の契約数グラフも見れるよ📈</p>
+    </div>
+  </section>
+
+  <section id="s6">
+    <div class="sec-head"><div class="num">6</div><h2>📅 Googleカレンダー連携</h2></div>
+    <div class="card">
+      <p>回線編集画面に <b>「181日: ○○」「211日: ○○」</b> という日付チップが出るよ。タップすると1件ずつGoogleカレンダーの予定作成画面が開くから、そのまま保存すればOK✅</p>
+      <p>まとめて登録したいときは「⚙️設定」→「重要日程をカレンダーにインポート」でicsファイルを一括ダウンロード📥　Googleカレンダー（PC版）の設定→インポート/エクスポートから取り込めば、全回線ぶん一気に反映されるよ🙆</p>
+      <div class="warn">⚠️ <b>注意：</b>アプリから自動でリアルタイム同期する機能は作れないので、①個別タップ or ②ics一括インポート のどちらかを使ってね。</div>
+    </div>
+  </section>
+
+  <section id="s7">
+    <div class="sec-head"><div class="num">7</div><h2>⚙️ 設定（キャリア・契約者・使用者）</h2></div>
+    <div class="card">
+      <p>右上の⚙️アイコンから設定画面へ。3つの管理メニューがあるよ👇</p>
+      <table>
+        <tr><th>メニュー</th><th>内容</th></tr>
+        <tr><td>📡 キャリア管理</td><td>キャリア名と色タグを追加・編集・削除</td></tr>
+        <tr><td>👥 契約者名義管理</td><td>契約者名を追加・編集・削除</td></tr>
+        <tr><td>👤 使用者管理</td><td>使用者名を追加・編集・削除</td></tr>
+      </table>
+      <p style="margin-top:8px;">それぞれ右上の＋で新規追加、✎で編集、🗑で削除できるよ✍️</p>
+    </div>
+  </section>
+
+  <section id="s8">
+    <div class="sec-head"><div class="num">8</div><h2>💾 データのバックアップ</h2></div>
+    <div class="card">
+      <p>設定→「データエクスポート」でJSONファイルをダウンロードできるよ📁　定期的にバックアップ取っておくと安心💪</p>
+    </div>
+  </section>
+
+  <section id="s9">
+    <div class="sec-head"><div class="num">9</div><h2>❓ よくある質問</h2></div>
+    <div class="card">
+      <div class="faq">
+        <div class="q">Q. データはどこに保存されるの？</div>
+        <div class="a">A. このアプリを開いてるチャット環境に自動保存されるよ。閉じても消えないから安心してOK🙆</div>
+      </div>
+      <div class="faq">
+        <div class="q">Q. キャリアや契約者が選択肢に出てこない</div>
+        <div class="a">A. 先に「⚙️設定」から登録が必要だよ！登録すれば回線追加画面のプルダウンに出てくる✨</div>
+      </div>
+      <div class="faq">
+        <div class="q">Q. CBが「CB」タブに反映されない</div>
+        <div class="a">A. 取引追加のタグ欄に必ず「CB」と入力してね（大文字）。それ以外の文字だと集計対象外になるよ🔤</div>
+      </div>
+      <div class="faq">
+        <div class="q">Q. 181日・211日って自分で数字を変えられる？</div>
+        <div class="a">A. 今は固定だよ。変えたい場合は教えてくれれば調整できる🙋</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    📱 回線管理アプリ 取扱説明書 ／ 何か不明点あればいつでも聞いてね😊<br><br>
+    <b style="color:var(--text);">やっぴ〜Presents</b><br>
+    X（@8p_thankyou）　LINE公式（https://lin.ee/AsTWK4D）
+  </div>
+</div>
+</body>
+</html>
